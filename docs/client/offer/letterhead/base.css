@@ -1,0 +1,22 @@
+@font-face { font-family: "Plex"; src: url("../fonts/IBMPlexSansArabic-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Plex"; src: url("../fonts/IBMPlexSansArabic-Medium.ttf"); font-weight: 500; }
+@font-face { font-family: "Plex"; src: url("../fonts/IBMPlexSansArabic-SemiBold.ttf"); font-weight: 600; }
+@font-face { font-family: "Plex"; src: url("../fonts/IBMPlexSansArabic-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Taj"; src: url("../fonts/Tajawal-Medium.ttf"); font-weight: 500; }
+@font-face { font-family: "Taj"; src: url("../fonts/Tajawal-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Taj"; src: url("../fonts/Tajawal-ExtraBold.ttf"); font-weight: 800; }
+:root { --navy: #142334; --gold: #b8913f; --ink: #222831; --soft: #6b7480; --line: #e4dccb; }
+* { box-sizing: border-box; }
+html { direction: rtl; }
+body { margin: 0; font-family: "Plex"; font-size: 11.5pt; line-height: 1.95; color: var(--ink); }
+h1 { font-family: "Taj"; font-weight: 800; font-size: 22pt; color: var(--navy); margin: 0 0 1mm; line-height: 1.4; }
+.subtitle { font-size: 11pt; color: var(--soft); margin: 0 0 9mm; }
+h2 { font-family: "Taj"; font-weight: 700; font-size: 14.5pt; color: var(--navy); margin: 8mm 0 2.5mm; line-height: 1.4; }
+h2 .no { color: var(--gold); margin-left: 2mm; }
+p { margin: 0 0 3mm; text-align: justify; }
+ul { margin: 0; padding: 0 6mm 0 0; }
+li { margin-bottom: 1.5mm; }
+li::marker { color: var(--gold); }
+b { font-weight: 600; color: var(--navy); }
+.to { display: flex; justify-content: space-between; border: 1px solid var(--line); border-radius: 2mm; padding: 3mm 5mm; margin: 0 0 9mm; font-size: 10.5pt; }
+.to span { color: var(--soft); margin-left: 2mm; }
