@@ -1,0 +1,44 @@
+/* B · رَمل — تحريري فاتح: ورق رملي + حبر بني + زعفران
+   الفكرة: ثقة ووضوح مثل مجلة ضيافة مطبوعة. الموقع الوحيد الفاتح بين منافسين كلهم داكنين؛
+   تمايز فوري في نتائج البحث، وصور القهوة الحقيقية تبرز على الورق. */
+.c-raml{
+  --f-head:'Noto Naskh Arabic',serif;--f-body:'IBM Plex Sans Arabic',system-ui,sans-serif;
+  --paper:#f6f1e7;--bg:#f6f1e7;--bg-2:#efe7d8;--card:#fffdf8;--panel:#fffdf8;--panel-solid:#fffdf8;
+  --tx:#3a2f26;--tx-h:#1f1812;--tx-2:#5c4f43;--tx-3:#6f6254;
+  --brand:#9a5b1e;--brand-tx:#8a4f16;--on-brand:#fffdf8;--accent-h1:#9a5b1e;
+  --line:rgba(31,24,18,.10);--line-2:rgba(31,24,18,.22);
+  --chip-bg:rgba(154,91,30,.07);--ic-bg:#f3e7d4;
+  --hdr-bg:rgba(246,241,231,.86);--mbar-bg:rgba(246,241,231,.94);--ftr-bg:#1f1812;
+  --ph-bg:#e9dfcd;--ph-ic:#9a5b1e;--ph-cap:rgba(255,253,248,.92);
+  --ph-pattern:repeating-linear-gradient(135deg,transparent 0 14px,rgba(154,91,30,.06) 14px 15px);
+  --in-bg:#fbf8f2;--in-bd:rgba(31,24,18,.18);--ring:rgba(154,91,30,.16);--scheme:light;--focus:#9a5b1e;
+  --panel-sh:0 24px 60px -30px rgba(60,40,20,.28);
+  --proto-bg:#1f1812;--proto-tx:#efe7d8;--r:12px;--btn-r:12px;
+}
+.c-raml h1,.c-raml h2{font-weight:700}
+.c-raml .hero{padding-block:var(--s7) var(--s8)}
+.c-raml .hero-head{max-width:980px}
+.c-raml .hero-head h1{font-size:clamp(38px,7vw,80px);line-height:1.4;margin-top:var(--s2)}
+.c-raml .hero-row{display:grid;gap:var(--s5);margin-top:var(--s5);align-items:end}
+@media(min-width:960px){.c-raml .hero-row{grid-template-columns:1fr auto;gap:var(--s8)}.c-raml .hero-row .cta{margin-top:0}}
+.c-raml .hero-ph{margin-top:var(--s7);aspect-ratio:21/9;min-height:240px;border-radius:var(--r)}
+@media(max-width:700px){.c-raml .hero-ph{aspect-ratio:4/3;min-height:0}}
+.c-raml .facts{display:grid;gap:0;margin-top:var(--s5);border-top:1px solid var(--line-2)}
+.c-raml .facts li{display:flex;align-items:baseline;gap:var(--s4);padding:var(--s4) 0;border-bottom:1px solid var(--line)}
+.c-raml .facts b{font-family:var(--f-head);font-size:22px;color:var(--brand)}
+.c-raml .facts span{font-size:16px;color:var(--tx)}
+@media(min-width:900px){.c-raml .facts{grid-template-columns:repeat(3,1fr)}.c-raml .facts li{border-bottom:0;padding-inline-end:var(--s5)}.c-raml .facts li+li{border-inline-start:1px solid var(--line);padding-inline-start:var(--s5)}}
+.c-raml .eb::before{background:var(--brand)}
+.c-raml .svc-it{border-radius:0;border:0;border-top:2px solid var(--tx-h);background:transparent;padding-inline:0}
+.c-raml .svc-it:hover{transform:none;border-color:var(--brand)}
+.c-raml .svc-ic{background:transparent;width:auto;height:auto;justify-content:start;border-radius:0}
+.c-raml .occ-sec{background:var(--bg-2)}
+.c-raml .steps li{background:transparent;border:0;border-top:1px solid var(--line-2);border-radius:0;padding-inline:0}
+.c-raml .steps .n{border-radius:0;background:transparent;color:var(--brand);font-size:44px;width:auto;height:auto;justify-content:start}
+.c-raml .order-sec{background:#1f1812;color:#efe7d8}
+.c-raml .order-sec h2{color:#fffdf8}.c-raml .order-sec .sh p,.c-raml .order-sec .ticks li{color:#d9cdbb}
+.c-raml .order-sec .eb{color:#e2a35f}.c-raml .order-sec .ticks .ic{color:#e2a35f}
+.c-raml .order-sec .panel{color:var(--tx)}
+.c-raml .ftr{color:#d9cdbb;border-top:0}
+.c-raml .ftr-b{color:#fffdf8}.c-raml .ftr p,.c-raml .ftr nav a{color:#c9bca8}.c-raml .ftr nav a:hover{color:#fff}.c-raml .ftr .fine{color:#a89a86}
+.c-raml .btn.wa{box-shadow:none}

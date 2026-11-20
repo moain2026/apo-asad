@@ -1,0 +1,46 @@
+/* C · سدو — تراثي جريء: عنابي التمر + زعفران + نقش السدو الهندسي
+   الفكرة: النقش البدوي (السدو) ونخل الأحساء والقطيف. هوية محلية لا تُنسى، وتصلح للإعلانات والسوشال.
+   عنابي/أحمر تمر بدل الذهبي والأسود. */
+.c-sadu{
+  --f-head:'Reem Kufi','Noto Kufi Arabic',sans-serif;--f-body:'IBM Plex Sans Arabic',system-ui,sans-serif;
+  --ink:#1d0f0e;--bg:#1d0f0e;--bg-2:#26130f;--card:#2c1714;--panel:#2c1714;--panel-solid:#2c1714;
+  --tx:#ead9c6;--tx-h:#fbf1e3;--tx-2:#d2bba4;--tx-3:#b39a83;
+  --brand:#e3a33b;--brand-tx:#eab057;--on-brand:#1d0f0e;--accent-h1:#e3a33b;
+  --line:rgba(227,163,59,.14);--line-2:rgba(227,163,59,.34);
+  --chip-bg:rgba(29,15,14,.6);--ic-bg:rgba(227,163,59,.10);
+  --hdr-bg:rgba(29,15,14,.84);--mbar-bg:rgba(29,15,14,.94);--ftr-bg:#160b0a;
+  --ph-bg:linear-gradient(160deg,#5a2119,#2a1210);--ph-ic:#e3a33b;--ph-cap:rgba(22,11,10,.86);
+  --ph-pattern:repeating-linear-gradient(45deg,transparent 0 18px,rgba(227,163,59,.06) 18px 19px),repeating-linear-gradient(-45deg,transparent 0 18px,rgba(227,163,59,.06) 18px 19px);
+  --in-bg:#231210;--in-bd:rgba(227,163,59,.22);--ring:rgba(227,163,59,.18);--scheme:dark;--focus:#e3a33b;
+  --panel-sh:0 30px 70px -40px #000;--r:6px;--btn-r:6px;--r-sm:6px;
+  --proto-bg:#7a2a1d;--proto-tx:#fbe9d5;
+  --sadu:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24' viewBox='0 0 48 24'%3E%3Crect width='48' height='24' fill='%237a2a1d'/%3E%3Cpath d='M0 12 12 0l12 12-12 12Z' fill='%23e3a33b'/%3E%3Cpath d='M24 12 36 0l12 12-12 12Z' fill='%231d0f0e'/%3E%3Cpath d='M12 6l6 6-6 6-6-6Z' fill='%231d0f0e'/%3E%3Cpath d='M36 6l6 6-6 6-6-6Z' fill='%23fbf1e3'/%3E%3C/svg%3E");
+}
+.c-sadu h1,.c-sadu h2{font-weight:700}
+.c-sadu .hero{position:relative;min-height:min(86svh,820px);display:grid;align-items:end;isolation:isolate}
+.c-sadu .hero-ph{position:absolute;inset:0;border-radius:0;border:0;z-index:-2}
+.c-sadu .hero-ph figcaption{inset-inline:auto var(--gut);top:16px;bottom:auto;max-width:300px}
+.c-sadu .hero-veil{position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#1d0f0e 8%,rgba(29,15,14,.82) 45%,rgba(29,15,14,.25))}
+.c-sadu .hero-in{width:100%;padding-block:var(--s8) var(--s7)}
+.c-sadu .hero-card{max-width:680px;border-inline-start:4px solid var(--brand);padding-inline-start:var(--s5)}
+@media(min-width:768px){.c-sadu .hero-card{padding-inline-start:var(--s6)}}
+.c-sadu .hero-card h1{margin-top:var(--s4)}
+.c-sadu .hero-card .lead{margin-top:var(--s4);color:var(--tx)}
+.c-sadu .sadu{height:24px;background:var(--sadu) repeat-x;background-size:48px 24px}
+.c-sadu .chip{border-radius:var(--r)}
+.c-sadu .eb{font-family:var(--f-head);font-size:15px}
+.c-sadu .eb::before{width:10px;height:10px;border-radius:0;transform:rotate(45deg);background:var(--brand)}
+.c-sadu .svc-it{border-top:3px solid var(--brand)}
+.c-sadu .svc-ic{border-radius:0;transform:rotate(45deg);width:46px;height:46px;margin:6px 6px var(--s5)}
+.c-sadu .svc-ic .ic{transform:rotate(-45deg);width:24px;height:24px}
+.c-sadu .occ-sec{background:#7a2a1d}
+.c-sadu .occ-sec .eb,.c-sadu .occ-sec .eb::before{color:#fbe9d5;background:none}
+.c-sadu .occ-sec .eb::before{background:#fbe9d5}
+.c-sadu .occ-it{background:rgba(29,15,14,.35);border-color:rgba(251,233,213,.18)}
+.c-sadu .occ-it>.ic:first-child,.c-sadu .occ-it .arr{color:#fbe9d5}
+.c-sadu .steps .n{border-radius:0;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);width:52px;height:52px}
+.c-sadu .order-sec{position:relative;background:var(--bg-2)}
+.c-sadu .order-sec::before,.c-sadu .ftr::before{content:"";position:absolute;inset-inline:0;top:0;height:12px;background:var(--sadu) repeat-x;background-size:24px 12px;opacity:.9}
+.c-sadu .ftr{position:relative}
+.c-sadu .hero-ph .ph-ic{display:none}
+@media(max-width:767px){.c-sadu .hero-ph figcaption{inset-inline:var(--gut);max-width:none}}

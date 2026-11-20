@@ -1,0 +1,35 @@
+/* A · دانة — كحلي الخليج العميق + لؤلؤ + زجاج البحر
+   الفكرة: الدانة (اللؤلؤة) رمز الشرقية والخليج. فخامة هادئة باردة تبرز دفء صور القهوة.
+   بعيد عمدًا عن ذهبي كيف #c5a059 وزمردي القهوة الملكية. */
+.c-dana{
+  --f-head:'El Messiri','IBM Plex Sans Arabic',serif;--f-body:'IBM Plex Sans Arabic',system-ui,sans-serif;
+  --bg:#0a1420;--bg-2:#0e1a29;--card:#111f30;--panel:rgba(17,31,48,.72);--panel-solid:#111f30;
+  --tx:#d9dee6;--tx-h:#f4f1ea;--tx-2:#b4bfcc;--tx-3:#8e9bab;
+  --brand:#9fd3cb;--brand-tx:#a9dbd3;--on-brand:#0a1420;--accent-h1:#e8dcc6;
+  --line:rgba(159,211,203,.12);--line-2:rgba(159,211,203,.30);
+  --chip-bg:rgba(159,211,203,.07);--ic-bg:rgba(159,211,203,.09);
+  --hdr-bg:rgba(10,20,32,.78);--mbar-bg:rgba(10,20,32,.9);--ftr-bg:#08111b;
+  --ph-bg:linear-gradient(160deg,#152740,#0d1a2a 70%);--ph-ic:#9fd3cb;--ph-cap:rgba(8,17,27,.82);
+  --ph-pattern:radial-gradient(circle at 70% 20%,rgba(232,220,198,.10),transparent 55%),repeating-radial-gradient(circle at 30% 120%,transparent 0 22px,rgba(159,211,203,.05) 22px 23px);
+  --in-bg:#0c1825;--in-bd:rgba(159,211,203,.20);--ring:rgba(159,211,203,.18);--scheme:dark;--focus:#e8dcc6;
+  --panel-sh:0 30px 80px -40px rgba(0,0,0,.9);
+  --proto-bg:#13263a;--proto-tx:#cfe6e2;
+}
+.c-dana body,body.c-dana{background:radial-gradient(1200px 600px at 85% -10%,rgba(159,211,203,.10),transparent 60%),radial-gradient(900px 500px at 0% 30%,rgba(232,220,198,.05),transparent 60%),var(--bg)}
+.c-dana .hero{padding-block:var(--s7) var(--s8)}
+.c-dana .hero-in{display:grid;gap:var(--s6);align-items:center}
+@media(min-width:960px){.c-dana .hero{padding-block:var(--s8) var(--s9)}.c-dana .hero-in{grid-template-columns:1.05fr 1fr;gap:var(--s8)}}
+.c-dana .hero-txt h1{margin-top:var(--s5)}
+.c-dana .hero-txt .lead{margin-top:var(--s4)}
+.c-dana .hero-ph{aspect-ratio:4/5;min-height:0;border-radius:28px 28px 28px 120px;border-color:var(--line-2)}
+@media(max-width:959px){.c-dana .hero-ph{aspect-ratio:4/3;border-radius:24px 24px 24px 80px}}
+.c-dana .facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:var(--s3);border:1px solid var(--line);border-radius:var(--r);background:rgba(17,31,48,.6)}
+.c-dana .facts li{padding:var(--s4) var(--s2);text-align:center;display:flex;flex-direction:column;gap:2px}
+.c-dana .facts li+li{border-inline-start:1px solid var(--line)}
+.c-dana .facts b{font-family:var(--f-head);color:var(--tx-h);font-size:16px}
+.c-dana .facts span{font-size:13px;color:var(--tx-3)}
+.c-dana h1 em{background:linear-gradient(90deg,#f4f1ea,#e8dcc6 40%,#9fd3cb);-webkit-background-clip:text;background-clip:text;color:transparent}
+.c-dana .svc-sec,.c-dana .work-sec,.c-dana .faq-sec{background:var(--bg-2);border-block:1px solid var(--line)}
+.c-dana .steps .n{background:linear-gradient(135deg,#e8dcc6,#9fd3cb)}
+.c-dana .order-sec{background:radial-gradient(800px 400px at 20% 50%,rgba(159,211,203,.10),transparent 70%)}
+.c-dana .panel{backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
