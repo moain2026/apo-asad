@@ -12,6 +12,7 @@
 | دراسة المنطقة الشرقية والسوق والمواسم | [دراسة المنطقة والسوق](docs/discovery/eastern-region-market-study.md) |
 | تحليل التفاوض والأعمال السابقة | [تحليل المحادثة والنماذج](docs/discovery/conversation-analysis.md) |
 | ملف العرض الجاهز للإرسال (PDF) + رسالة الطلبات | [Tayf-Aldiyafa-Offer.pdf](docs/client/offer/Tayf-Aldiyafa-Offer.pdf) — مصدره `tayf-offer.html`؛ [رسالة الطلبات](docs/client/offer/client-requests.md) |
+| ملف إحاطة كامل لوكيل ذكاء اصطناعي (برومبت + كل البحث والمحادثة) | [tayf-briefing-for-ai-agent.md](docs/ai-briefing/tayf-briefing-for-ai-agent.md) — نسخة `.txt` بجانبه |
 | إعداد ملف العميل | [مسودة عرض أبو سعد](docs/client/proposal.md) — لا تُرسل قبل مراجعة الأرقام والمواعيد والبنود المفتوحة مع معين |
 | التحقق من مادة المصدر | [أرشيف الأدلة وملاحظات الخصوصية](internal/evidence/README.md) |
 
