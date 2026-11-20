@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>خطة العمل والعرض — موقع طيف الضيافة</title>
+<style>
+@page { size: A4; margin: 16mm 15mm 18mm 15mm;
+  @bottom-center { content: "طيف الضيافة — خطة العمل والعرض  |  صفحة " counter(page) " من " counter(pages); font-family: "Noto Sans Arabic"; font-size: 8pt; color: #8a7a55; } }
+@page :first { margin: 0; @bottom-center { content: none; } }
+* { box-sizing: border-box; }
+body { font-family: "Noto Sans Arabic", sans-serif; font-size: 10.3pt; line-height: 1.75; color: #1f2328; margin: 0; }
+h1, h2, h3 { font-family: "Noto Kufi Arabic", sans-serif; line-height: 1.5; margin: 0; }
+h2 { font-size: 15pt; color: #1b2a3a; margin: 4mm 0 3mm; padding-bottom: 1.5mm; border-bottom: 2px solid #c9a24a; }
+h2 .n { color: #c9a24a; margin-left: 2mm; }
+h3 { font-size: 11pt; color: #1b2a3a; margin-bottom: 1mm; }
+p { margin: 0 0 2.5mm; }
+ul { margin: 0; padding: 0 5mm 0 0; }
+li { margin-bottom: 1mm; }
+b { color: #1b2a3a; }
+.gold { color: #b08a35; }
+.muted { color: #5c6670; font-size: 9pt; }
+
+/* cover */
+.cover { height: 297mm; background: #14202c; color: #f4ecd8; position: relative; padding: 0 22mm; page-break-after: always; }
+.cover .frame { position: absolute; inset: 10mm; border: 1px solid #c9a24a55; }
+.cover .top { padding-top: 48mm; text-align: center; }
+.cover .mark { font-family: "Noto Kufi Arabic"; font-size: 13pt; letter-spacing: 1px; color: #c9a24a; }
+.cover h1 { font-size: 34pt; color: #fff; margin: 8mm 0 2mm; }
+.cover .sub { font-size: 14pt; color: #e3cf9c; font-family: "Noto Kufi Arabic"; }
+.cover .line { width: 40mm; height: 2px; background: #c9a24a; margin: 10mm auto; }
+.cover .lead { font-size: 11.5pt; color: #d9d2bf; max-width: 140mm; margin: 0 auto; text-align: center; line-height: 1.9; }
+.cover .meta { position: absolute; bottom: 30mm; left: 22mm; right: 22mm; display: flex; justify-content: space-between; font-size: 10pt; color: #d9d2bf; border-top: 1px solid #c9a24a66; padding-top: 5mm; }
+.cover .meta b { color: #c9a24a; display: block; font-family: "Noto Kufi Arabic"; font-size: 9pt; font-weight: normal; }
+
+/* boxes */
+.intro { background: #f8f4ea; border-right: 4px solid #c9a24a; padding: 4mm 5mm; margin-bottom: 4mm; }
+.grid2 { column-count: 2; column-gap: 4mm; }
+.card { display: block; width: 100%; margin: 0 0 3.5mm; border: 1px solid #e6dcc4; border-radius: 3mm; padding: 3.5mm 4mm; background: #fff; break-inside: avoid; page-break-inside: avoid; }
+.card h3 .ic { display: inline-block; width: 7mm; height: 7mm; line-height: 7mm; text-align: center; border-radius: 50%; background: #14202c; color: #c9a24a; font-size: 9pt; margin-left: 2mm; }
+.card ul { font-size: 9.4pt; }
+.card.wide { column-span: all; }
+.problems li::marker { color: #b5473a; }
+.pill { display: inline-block; background: #14202c; color: #f4ecd8; border-radius: 10mm; padding: 0.5mm 3.5mm; font-size: 8.5pt; margin: 0 0 1.5mm 1.5mm; }
+
+table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm; font-size: 9.5pt; page-break-inside: avoid; }
+th { background: #14202c; color: #f4ecd8; font-family: "Noto Kufi Arabic"; font-weight: normal; padding: 2mm 3mm; text-align: right; }
+td { border-bottom: 1px solid #ece3cf; padding: 2mm 3mm; vertical-align: top; }
+tr:nth-child(even) td { background: #fbf8f1; }
+
+.journey { display: flex; gap: 2mm; margin: 3mm 0 4mm; page-break-inside: avoid; }
+.step { flex: 1; text-align: center; background: #f8f4ea; border-radius: 3mm; padding: 3mm 2mm; font-size: 9pt; position: relative; }
+.step .num { display: block; width: 8mm; height: 8mm; line-height: 8mm; margin: 0 auto 1.5mm; border-radius: 50%; background: #c9a24a; color: #fff; font-family: "Noto Kufi Arabic"; font-size: 10pt; }
+
+.price { display: flex; gap: 3mm; margin: 3mm 0; page-break-inside: avoid; }
+.price .box { flex: 1; border-radius: 3mm; padding: 4mm; text-align: center; background: #f8f4ea; }
+.price .box.main { background: #14202c; color: #f4ecd8; }
+.price .big { font-family: "Noto Kufi Arabic"; font-size: 20pt; display: block; color: #c9a24a; }
+.price .lbl { font-size: 9pt; }
+.note { background: #f3f6f9; border-right: 4px solid #1b2a3a; padding: 3mm 4mm; font-size: 9.3pt; margin: 3mm 0; page-break-inside: avoid; }
+.pb { page-break-before: always; }
+.closing { text-align: center; margin-top: 6mm; padding: 5mm; background: #14202c; color: #f4ecd8; border-radius: 3mm; page-break-inside: avoid; }
+.closing h3 { color: #c9a24a; font-size: 13pt; }
+.sign { display: flex; justify-content: space-between; margin-top: 8mm; font-size: 9.5pt; page-break-inside: avoid; }
+.sign div { width: 45%; border-top: 1px solid #b9ad8f; padding-top: 2mm; text-align: center; color: #5c6670; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="cover">
+  <div class="frame"></div>
+  <div class="top">
+    <div class="mark">فريق MoTech التقني</div>
+    <h1>طيف الضيافة</h1>
+    <div class="sub">خطة العمل والعرض لمنصة ضيافة رقمية تخدم المنطقة الشرقية بالكامل</div>
+    <div class="line"></div>
+    <p class="lead">اسم جديد وهوية خاصة، وموقع سريع يعرض شغلك بصورته الحقيقية، ويوصّل لك طلبات المناسبات في المنطقة الشرقية برسالة واتساب وحدة.</p>
+  </div>
+  <div class="meta">
+    <div><b>مقدّم إلى</b>أبو سعد</div>
+    <div><b>إعداد</b>م. معين العباسي</div>
+    <div><b>التاريخ</b>20 نوفمبر 2026</div>
+  </div>
+</section>
+
+<!-- ============ 1. INTRO ============ -->
+<h2><span class="n">1.</span>المقدمة</h2>
+<div class="intro">
+  <p>بناءً على حديثنا، هذا الملف يشرح <b>كل اللي بنسويه لك بالضبط</b>: من اختيار الاسم والشعار، إلى الموقع والإيميل الرسمي وحضورك في جوجل وخرائطه، إلى التصاميم والحسابات والتدريب والدعم بعد الإطلاق.</p>
+  <p style="margin:0">الهدف إنك تنتقل من <b>إعلانات متفرقة في حراج</b> إلى <b>اسم ومنصة باسمك</b>. الزبون في الدمام والخبر وبقية مدن الشرقية يبحث في جوجل، يلقاك، يشوف شغلك ويثق فيه، ويرسل لك تفاصيل مناسبته على الواتساب مباشرة.</p>
+</div>
+
+<h2><span class="n">2.</span>الوضع الحالي: ليش لازم نتغير؟</h2>
+<ul class="problems">
+  <li><b>الاعتماد على حراج:</b> إعلانك يتزاحم مع عشرات الإعلانات المتشابهة، والمنافسة فيه على السعر قبل الجودة.</li>
+  <li><b>إعلانات تُصرف بلا متابعة:</b> ما تعرف كم زبون جاك منها ولا من وين.</li>
+  <li><b>ما فيه اسم ولا هوية:</b> الزبون يتذكر رقمًا، وما يتذكر اسمًا يرجع له أو يوصي فيه غيره.</li>
+  <li><b>جوجل ما يعرفك:</b> اللي يبحث «قهوجيين الدمام» أو «صبابين الخبر» يلقى غيرك.</li>
+  <li><b>شغلك الحلو مدفون في الجوال:</b> صور مناسباتك ما يشوفها إلا القليل، وممكن أحد ياخذها وينسبها لنفسه.</li>
+</ul>
+
+<!-- ============ 3. SCOPE ============ -->
+<h2 class="pb"><span class="n">3.</span>وش بنسوي لك بالضبط؟</h2>
+<p class="muted" style="margin-bottom:3mm">ثمانية محاور متكاملة تُسلَّم كمنظومة وحدة باسمك.</p>
+
+<div class="grid2">
+  <div class="card">
+    <h3><span class="ic">١</span>الاسم والهوية البصرية</h3>
+    <ul>
+      <li>دراسة اسم «طيف الضيافة» والتحقق من توفر الدومين والحسابات قبل الحجز.</li>
+      <li>تصميم شعار خاص مع مقترحات وتعديلات حتى الاعتماد.</li>
+      <li>ألوان وخطوط ثابتة لهويتك في الموقع والسوشال والطباعة.</li>
+      <li>ملفات الشعار بكل الأحجام: للطباعة والحسابات وصورة الواتساب.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3><span class="ic">٢</span>الدومين والإيميل الرسمي والاستضافة</h3>
+    <ul>
+      <li>حجز دومين عالمي <b>.com</b> باسمك.</li>
+      <li><b>إيميل رسمي</b> باسم النشاط مثل info@ بدل جيميل، ويُعتمد عند الشركات والجهات.</li>
+      <li>ضبط إعدادات الإيميل (SPF وDMARC) حتى ما تروح رسائلك للسبام.</li>
+      <li>استضافة سريعة وشهادة أمان <b>SSL</b> (القفل الأخضر).</li>
+      <li>الدومين والحسابات <b>مسجلة باسمك وملكك أنت</b>.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3><span class="ic">٣</span>تصميم وبرمجة الموقع</h3>
+    <ul>
+      <li>تصميم خاص مفصّل لك، <b>بدون قوالب جاهزة</b>، عربي بالكامل.</li>
+      <li>فيديو استقبال في أول الصفحة من مقاطع مناسباتك.</li>
+      <li>عرض التقديمات بأسلوب <b>القصص (ستوري)</b> مثل سناب وإنستقرام.</li>
+      <li><b>سرعة وأداء وإبهار:</b> مصمم للجوال أولًا، خفيف وسريع، وصوره مضغوطة بصيغ حديثة، مع حركات بسيطة تعطي الموقع حياة. نختبر السرعة قبل التسليم.</li>
+      <li>يتثبت على شاشة الجوال <b>كأنه تطبيق</b> بدون تحميل من المتجر.</li>
+      <li><b>نموذج أولي</b> تشوفه وتعدّل عليه قبل الاعتماد النهائي.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3><span class="ic">٤</span>تحويل الزائر إلى طلب</h3>
+    <ul>
+      <li>زرّا <b>واتساب واتصال</b> ثابتين أمام الزائر في كل صفحة.</li>
+      <li>نموذج <b>«اطلب عرض سعر»</b> يوصلك على الواتساب جاهزًا: نوع المناسبة، المدينة، التاريخ، وعدد الضيوف.</li>
+      <li>بدون أسعار في الموقع (حسب رغبتك)، والاتفاق يكون معك مباشرة بما يناسب كل مناسبة.</li>
+      <li>تجهيز واتساب بزنس: الشعار، والنبذة، ورسالة ترحيب.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3><span class="ic">٥</span>الظهور في جوجل وخرائطه</h3>
+    <ul>
+      <li>تهيئة كل صفحة لكلمات البحث المحلية مثل «قهوجيين الدمام» و«صبابين قهوة الخبر».</li>
+      <li>تسجيل الموقع في <b>Google Search Console</b> وإرسال خريطة الصفحات والصور <b>لطلب الفهرسة</b> ومتابعتها.</li>
+      <li>تعريف نشاطك لجوجل ببيانات منظمة (نوع الخدمة، والمناطق، والتواصل).</li>
+      <li>إنشاء وتجهيز <b>ملفك على خرائط جوجل</b> كنشاط يخدم مدن المنطقة الشرقية، مع <b>رابط وباركود تقييم</b> ترسله لزبائنك بعد كل مناسبة.</li>
+      <li>تهيئة الموقع للظهور في محركات الذكاء الاصطناعي مثل ChatGPT.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3><span class="ic">٦</span>التصاميم والسوشال ميديا</h3>
+    <ul>
+      <li>إنشاء وتجهيز حساباتك الجديدة: <b>إنستقرام وتيك توك وسناب شات</b>، بالبايو والروابط والهوية.</li>
+      <li><b>تصاميم منشورات وستوري للإطلاق</b> بهويتك الجديدة، و«هايلايت» منظمة للحسابات.</li>
+      <li>صفحة روابط موحدة لكل حساباتك + <b>باركود</b> للطباعة والمناسبات.</li>
+      <li>ربط الموقع بالحسابات في الاتجاهين.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3><span class="ic">٧</span>صورك ومحتواك وحمايتها</h3>
+    <ul>
+      <li>فرز صورك وفيديوهاتك وتنسيقها وتحسين إضاءتها وجودتها وتصنيفها حسب الخدمة.</li>
+      <li><b>توقيع الصور بشعارك</b> (علامة مائية) بحيث يبان إنها شغلك أينما انتشرت.</li>
+      <li>تسجيل اسمك وحقوقك داخل بيانات الصور، وخريطة صور لجوجل تربط صورك بموقعك كمصدرها الأصلي.</li>
+      <li>تقليل النسخ والتحميل المباشر للصور من الموقع.</li>
+      <li>صفحة <b>حقوق النشر والملكية</b> وسياسة الخصوصية في الموقع.</li>
+      <li>كتابة نصوص الموقع بلغة تسويقية قريبة من زبونك.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3><span class="ic">٨</span>القياس والإعلانات</h3>
+    <ul>
+      <li>ربط <b>Google Analytics</b> لمعرفة عدد الزوار ومن وين جوا.</li>
+      <li>قياس ضغطات <b>الواتساب والاتصال</b>، فتعرف كم طلب جاك من الموقع.</li>
+      <li>تجهيز الموقع لإعلانات جوجل وسناب وتيك توك (أكواد التتبع).</li>
+      <li>تجهيز حساب <b>Google Ads</b> وشرح تشغيل الحملة بخطوات بسيطة عند الحاجة.</li>
+      <li>دراسة مختصرة لمنافسيك في الشرقية ونقاط تميزك عليهم.</li>
+    </ul>
+  </div>
+  <div class="card wide">
+    <h3><span class="ic">✓</span>التسليم والتدريب والدعم</h3>
+    <ul>
+      <li><b>فيديو شرح</b> مسجّل للشاشة بلغة بسيطة: كيف تستقبل الطلبات، وكيف تستخدم الإيميل والحسابات.</li>
+      <li>تسليم كل بيانات الدخول لك على الخاص، وكل شي باسمك.</li>
+      <li><b>صيانة وتعديلات مجانية لمدة شهرين</b> بعد الإطلاق، والموقع قابل للتطوير والإضافة مستقبلًا.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ 4. PAGES ============ -->
+<h2 class="pb"><span class="n">4.</span>صفحات المنصة</h2>
+<table>
+  <tr><th style="width:30%">الصفحة</th><th>وش فيها</th></tr>
+  <tr><td><b>الرئيسية</b></td><td>فيديو الاستقبال، وخدماتك باختصار، وصور من شغلك، وخطوات الطلب، وأزرار التواصل.</td></tr>
+  <tr><td><b>الخدمات</b></td><td>كل خدمة بصفحة أو قسم واضح مع صورها ووصفها.</td></tr>
+  <tr><td><b>التقديمات والمنيو</b></td><td>المشروبات والتقديمات بالفئات وبأسلوب القصص.</td></tr>
+  <tr><td><b>أعمالنا</b></td><td>معرض صور وفيديو من مناسباتك، مصنف حسب نوع المناسبة.</td></tr>
+  <tr><td><b>صفحات مدن الشرقية</b></td><td>منصة تغطي <b>المنطقة الشرقية بالكامل</b>: صفحات محلية لـ<b>الدمام والخبر والظهران</b> والقطيف وسيهات والجبيل والأحساء وبقية المدن التي تخدمها. كل صفحة مكتوبة لأهل مدينتها وبكلمات بحثهم، فيصير لك حضور كأنه أكثر من موقع.</td></tr>
+  <tr><td><b>صفحات المناسبات</b></td><td>ضيافة الزواجات، والمجالس، ورمضان والغبقات، و<b>المخيمات والكشتات الشتوية</b>، ومناسبات الشركات والكوفي بريك، والعزاء، حسب ما تقدمه.</td></tr>
+  <tr><td><b>الأسئلة الشائعة</b></td><td>إجابات تريحك من تكرار نفس الأسئلة، وتساعد في الظهور بجوجل.</td></tr>
+  <tr><td><b>تواصل واطلب عرض</b></td><td>واتساب، واتصال، وإيميل رسمي، ونموذج طلب عرض.</td></tr>
+  <tr><td><b>الروابط والحقوق</b></td><td>صفحة روابط حساباتك، وسياسة الخصوصية، وحقوق الصور.</td></tr>
+</table>
+
+<h2><span class="n">5.</span>رحلة زبونك</h2>
+<div class="journey">
+  <div class="step"><span class="num">1</span>يبحث في جوجل أو الخرائط: «قهوجيين الخبر»</div>
+  <div class="step"><span class="num">2</span>يلقى «طيف الضيافة» باسمك وشعارك</div>
+  <div class="step"><span class="num">3</span>يشوف صور شغلك وتقديماتك</div>
+  <div class="step"><span class="num">4</span>يضغط واتساب ويعبي تفاصيل مناسبته</div>
+  <div class="step"><span class="num">5</span>توصلك الرسالة جاهزة وتتفق معه</div>
+</div>
+
+<h2><span class="n">6.</span>ليش نبدأ الحين؟</h2>
+<table>
+  <tr><th style="width:32%">الموسم</th><th>الموعد المتوقع</th><th>وش يعني لك</th></tr>
+  <tr><td>موسم البرد والمجالس</td><td>الحين حتى فبراير</td><td>الطلب قائم، وكل أسبوع بدون موقع فرص تروح لغيرك.</td></tr>
+  <tr><td><b>شهر رمضان</b></td><td><b>حوالي 8 فبراير 2027</b></td><td>غبقات وسحور ومجالس. نبي الموقع جاهز ومعروف عند جوجل <b>قبلها بأسابيع</b>.</td></tr>
+  <tr><td>يوم التأسيس</td><td>22 فبراير</td><td>ضيافة الشركات والجهات.</td></tr>
+  <tr><td>عيد الفطر ثم الأضحى</td><td>حوالي 9 مارس، و16 مايو</td><td>استقبالات العيد وموسم الزواجات.</td></tr>
+</table>
+<p class="muted" style="margin-top:-1mm">التواريخ الهجرية حسب تقويم أم القرى وقد تختلف بيوم.</p>
+
+<!-- ============ 7. PHASES ============ -->
+<h2><span class="n">7.</span>مراحل التنفيذ</h2>
+<table>
+  <tr><th style="width:6%">#</th><th style="width:26%">المرحلة</th><th>اللي يصير فيها</th></tr>
+  <tr><td>1</td><td><b>الاعتماد والانطلاق</b></td><td>اعتماد هذا العرض واستلام الدفعة الأولى، وحجز الاسم والدومين.</td></tr>
+  <tr><td>2</td><td><b>جمع المواد</b></td><td>تستلم منك الصور والفيديوهات وقائمة خدماتك ومدنك.</td></tr>
+  <tr><td>3</td><td><b>الهوية والنموذج الأولي</b></td><td>الشعار والألوان، ونموذج الصفحة الرئيسية للمراجعة والتعديل.</td></tr>
+  <tr><td>4</td><td><b>التنفيذ الكامل</b></td><td>بقية الصفحات، والإيميل، والحسابات، والتصاميم، وربط جوجل.</td></tr>
+  <tr><td>5</td><td><b>الاختبار والإطلاق</b></td><td>اختبار الواتساب والاتصال والإيميل على الجوال، ثم النشر وطلب الفهرسة وتجهيز ملف الخرائط.</td></tr>
+  <tr><td>6</td><td><b>التسليم والدعم</b></td><td>فيديو الشرح، وتسليم بيانات الدخول، وبدء شهرين الصيانة المجانية.</td></tr>
+</table>
+<p class="muted">النموذج الأولي خلال 7 أيام من استلام المواد كاملة، والتسليم خلال 14 يومًا منها، مع هدف إطلاق قبل منتصف يناير 2027.</p>
+
+<!-- ============ 8. INVESTMENT ============ -->
+<h2><span class="n">8.</span>الاستثمار</h2>
+<div class="price">
+  <div class="box main"><span class="lbl">إجمالي المشروع</span><span class="big">1,900 ريال</span><span class="lbl">شامل كل المحاور أعلاه</span></div>
+  <div class="box"><span class="lbl">الدفعة الأولى</span><span class="big">500 ريال</span><span class="lbl">عند اعتماد العرض وبدء العمل</span></div>
+  <div class="box"><span class="lbl">الدفعة الثانية</span><span class="big">1,400 ريال</span><span class="lbl">عند التسليم والإطلاق</span></div>
+</div>
+<div class="note">خدمات بهذا الحجم (هوية، وموقع خاص متعدد الصفحات، وإيميل رسمي، وتهيئة جوجل وخرائطه، وحسابات وتصاميم) تُقدَّم في السوق السعودي عادةً بعدة آلاف ريال. هذا عرض خاص لك يا أبو سعد.</div>
+
+<h3 style="margin-top:3mm">يشمل السعر</h3>
+<p>الدومين والإيميل الرسمي والاستضافة <b>للسنة الأولى</b>، وكل المحاور الثمانية، والتدريب، والدعم لشهرين.</p>
+<h3>خارج هذه المرحلة (نتفق عليها لاحقًا إذا احتجتها)</h3>
+<ul>
+  <li>موقع أو قسم <b>التأجير</b> (الجلسات والكراسي والطاولات والزل)، ونظام <b>الفواتير</b> وعروض الأسعار.</li>
+  <li><b>ميزانية الإعلانات</b> المدفوعة لجوجل أو السوشال، وتُدفع للمنصة مباشرة ومن حسابك.</li>
+  <li>تجديد الدومين والاستضافة بعد السنة الأولى.</li>
+</ul>
+
+<h2><span class="n">9.</span>التزامنا معك</h2>
+<ul>
+  <li><b>كل شي ملكك:</b> الدومين والإيميل والحسابات باسمك، وتستلم بيانات دخولها كاملة.</li>
+  <li><b>خصوصية تامة:</b> بياناتك وتفاصيل شغلك لا تُشارك مع أي طرف.</li>
+  <li><b>شغل صادق:</b> صورك الحقيقية وخدماتك الفعلية فقط، بدون ادعاءات. هذا اللي يبني ثقة زبونك ويثبت عند جوجل.</li>
+  <li><b>وضوح:</b> نشتغل على أفضل ممارسات جوجل ونتابع ظهورك معك. ترتيب البحث وقبول ملف الخرائط قرار جوجل، وهدفنا نعطيك أقوى أساس للظهور.</li>
+</ul>
+
+<div class="closing">
+  <h3>جاهزون للبدء فور اعتمادك</h3>
+  <p style="margin:0">طيف الضيافة: اسمك، وشغلك، وزبائنك في المنطقة الشرقية.</p>
+</div>
+
+<div class="sign">
+  <div>اعتماد العميل: أبو سعد</div>
+  <div>فريق MoTech التقني: م. معين العباسي</div>
+</div>
+
+</body>
+</html>

@@ -11,6 +11,7 @@
 | جرد موقع كيف وقائمة خدمات عرض طيف | [تحليل الموقع والخدمات والأسعار](docs/discovery/keif-site-audit-services.md) |
 | دراسة المنطقة الشرقية والسوق والمواسم | [دراسة المنطقة والسوق](docs/discovery/eastern-region-market-study.md) |
 | تحليل التفاوض والأعمال السابقة | [تحليل المحادثة والنماذج](docs/discovery/conversation-analysis.md) |
+| ملف العرض الجاهز للإرسال (PDF) + رسالة الطلبات | [Tayf-Aldiyafa-Offer.pdf](docs/client/offer/Tayf-Aldiyafa-Offer.pdf) — مصدره `tayf-offer.html`؛ [رسالة الطلبات](docs/client/offer/client-requests.md) |
 | إعداد ملف العميل | [مسودة عرض أبو سعد](docs/client/proposal.md) — لا تُرسل قبل مراجعة الأرقام والمواعيد والبنود المفتوحة مع معين |
 | التحقق من مادة المصدر | [أرشيف الأدلة وملاحظات الخصوصية](internal/evidence/README.md) |
 
