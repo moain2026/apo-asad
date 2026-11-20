@@ -53,7 +53,9 @@ h1{{font-family:C;font-weight:900;font-size:24pt;line-height:1.35;margin:1mm 0 0
 .its b{{font-weight:600}}
 .its .d{{color:#3C4566}}
 
-.price{{break-inside:avoid;margin-top:2mm}}
+.end{{break-inside:avoid;margin-top:4mm}} .end .tline{{margin:0 0 4mm}}
+.et{{font-family:C;font-weight:700;font-size:15pt;margin-bottom:1.5mm}}
+.end p{{margin:0;font-size:10.8pt;line-height:1.9;color:#3C4566;text-align:justify}}
 table{{width:100%;border-collapse:collapse}}
 .pt td{{padding:2.6mm 0;border-bottom:0.3mm solid #DDE2EF;font-size:10.6pt}}
 .pt .w{{color:#7A84A3;font-size:9pt}}
@@ -85,14 +87,13 @@ for i, (t, s, items) in enumerate(D.SECTIONS, 1):
     body.append(f'<div class="sec{" keep" if len(items) <= 5 else ""}"><div class="sh"><span class="no">{ar(i)}</span><span class="t">{t}</span>'
                 f'<span class="s">{s}</span></div><table class="its">{"".join(rows)}</table></div>')
 
-pr = ''.join(f'<tr><td class="l">{a} <span class="w">· {b}</span></td><td class="a">{c}<small>ريال</small></td></tr>' for a, b, c in D.PRICE)
-price = f'''<div class="price"><div class="sh"><span class="t">السعر</span></div>
-<table class="pt">{pr}<tr class="tot"><td class="l">الإجمالي</td><td class="a">{D.TOTAL}<small>ريال</small></td></tr></table>
-<table class="sg"><tr><td><div class="ln"></div>{D.SIGN[0]}</td><td><div class="ln"></div>{D.SIGN[1]}</td></tr></table></div>'''
+closing = ''
+if getattr(D, 'CLOSING', None):
+    closing = f'<div class="end"><div class="tline"></div><div class="et">{D.CLOSING[0]}</div><p>{D.CLOSING[1]}</p></div>'
 
 html = f'''<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>{css}</style></head><body>{frame}
-<p class="kick">عرض سعر<span>{D.DATE}</span></p><h1>{D.TITLE}</h1><div class="tline"></div>
-{"".join(body)}{price}</body></html>'''
+<p class="kick"><span>{D.DATE}</span>&nbsp;</p><h1>{D.TITLE}</h1><div class="tline"></div>
+{"".join(body)}{closing}</body></html>'''
 open('offer.html', 'w', encoding='utf-8').write(html)
 HTML(string=html, base_url='.').write_pdf(D.OUT)
 print('built', D.OUT, k, 'items')
