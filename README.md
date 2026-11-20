@@ -9,6 +9,7 @@
 | معرفة ما قاله كل طرف بالضبط | [التفريغ والرسائل المكتوبة](docs/discovery/transcript.md) |
 | مرجع كيف الضيافة وهيكل عرض طيف | [تحليل ملف كيف القديم والموقع](docs/discovery/keif-reference-analysis.md) |
 | جرد موقع كيف وقائمة خدمات عرض طيف | [تحليل الموقع والخدمات والأسعار](docs/discovery/keif-site-audit-services.md) |
+| دراسة المنطقة الشرقية والسوق والمواسم | [دراسة المنطقة والسوق](docs/discovery/eastern-region-market-study.md) |
 | تحليل التفاوض والأعمال السابقة | [تحليل المحادثة والنماذج](docs/discovery/conversation-analysis.md) |
 | إعداد ملف العميل | [مسودة عرض أبو سعد](docs/client/proposal.md) — لا تُرسل قبل مراجعة الأرقام والمواعيد والبنود المفتوحة مع معين |
 | التحقق من مادة المصدر | [أرشيف الأدلة وملاحظات الخصوصية](internal/evidence/README.md) |
