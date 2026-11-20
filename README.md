@@ -19,6 +19,7 @@
 | ملف إحاطة كامل لوكيل ذكاء اصطناعي (برومبت + كل البحث والمحادثة) | [tayf-briefing-for-ai-agent.md](docs/ai-briefing/tayf-briefing-for-ai-agent.md) — نسخة `.txt` بجانبه |
 | إعداد ملف العميل | [مسودة عرض أبو سعد](docs/client/proposal.md) — لا تُرسل قبل مراجعة الأرقام والمواعيد والبنود المفتوحة مع معين |
 | محضر مراجعة التوثيق وحسم الدومين (20/11) | [documentation-session-log.md](docs/01-preliminary-research/documentation-session-log.md) |
+| تحليل واجهات كيف والقهوة الملكية بالبكسل + نموذج أولي لطيف | [docs/02-design-research/](docs/02-design-research/README.md) — التحليل: [design-analysis.md](docs/02-design-research/design-analysis.md)؛ المقارنة: [comparison-mobile-fold.jpg](docs/02-design-research/comparison-mobile-fold.jpg) |
 | التحقق من مادة المصدر | [أرشيف الأدلة وملاحظات الخصوصية](internal/evidence/README.md) |
 
 لا تشارك التقرير الداخلي أو الأرشيف مع العميل أو في روابط عامة. المستند الوحيد المخصص للمشاركة بعد الاعتماد هو عرض العميل. لا تشغّل أي نشر تلقائي على جذر المستودع.

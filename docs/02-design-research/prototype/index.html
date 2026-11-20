@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>قهوجيين وصبابين في الدمام والخبر | طيف الضيافة — نموذج أولي</title>
+<style>
+/* ============ نموذج أولي داخلي — لا يُنشر ============ */
+@font-face{font-family:"Camel";src:url(../../client/offer/fonts/camel-700.ttf);font-weight:700}
+@font-face{font-family:"Camel";src:url(../../client/offer/fonts/camel-900.ttf);font-weight:900}
+@font-face{font-family:"Readex";src:url(../../client/offer/fonts/ReadexPro-400.ttf);font-weight:400}
+@font-face{font-family:"Readex";src:url(../../client/offer/fonts/ReadexPro-500.ttf);font-weight:500}
+@font-face{font-family:"Readex";src:url(../../client/offer/fonts/ReadexPro-600.ttf);font-weight:600}
+@font-face{font-family:"Readex";src:url(../../client/offer/fonts/ReadexPro-700.ttf);font-weight:700}
+:root{
+  --roast:#120d09; --roast-2:#1a130e; --roast-3:#231a13; --roast-4:#2d2219;
+  --copper:#d39a5e; --copper-hi:#ecc08a; --copper-lo:#a8703d;
+  --sand:#f4ebdd; --sand-2:rgba(244,235,221,.78); --sand-3:rgba(244,235,221,.58);
+  --line:rgba(211,154,94,.18); --line-2:rgba(211,154,94,.34);
+  --tayf:linear-gradient(100deg,#bb8148 0%,#d39a5e 35%,#ecc08a 65%,#d39a5e 100%);
+  --wa:#14803f;
+  --f-display:"Camel","Readex",system-ui,sans-serif;
+  --f-body:"Readex",system-ui,-apple-system,sans-serif;
+  --r-sm:12px; --r-md:18px; --r-lg:24px; --pill:999px;
+  --gutter:20px; --maxw:1200px; --sec:64px;
+  --hdr:60px; --bar:68px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-body);font-size:16px;line-height:1.75;color:var(--sand-2);background:var(--roast);padding-bottom:var(--bar);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.ribbon{background:#3a2a1c;color:var(--copper-hi);font-size:12px;text-align:center;padding:6px 12px;letter-spacing:.2px}
+
+/* ---------- Header ---------- */
+.hdr{position:sticky;top:0;z-index:50;height:var(--hdr);background:rgba(18,13,9,.86);backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid var(--line)}
+.hdr .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-name{font-family:var(--f-display);font-weight:700;font-size:21px;color:var(--sand);line-height:1;white-space:nowrap}
+.brand-sub{font-size:12px;color:var(--copper);margin-top:4px;line-height:1}
+.nav{display:none;gap:28px;font-size:15px;color:var(--sand-2)}
+.nav a:hover{color:var(--copper-hi)}
+.hdr-call{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border:1px solid var(--line-2);border-radius:var(--pill);color:var(--copper-hi);font-weight:600;font-size:14px}
+.hdr .hdr-cta{display:none}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 24px;border-radius:var(--pill);font-weight:600;font-size:16px;white-space:nowrap}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 24px rgba(20,128,63,.28)}
+.btn-copper{background:var(--tayf);color:#1b120a;box-shadow:0 8px 24px rgba(168,112,61,.28)}
+.btn-ghost{border:1px solid var(--line-2);color:var(--sand)}
+.btn svg{width:20px;height:20px}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;padding:28px 0 8px}
+.hero::before{content:"";position:absolute;inset:-20% -40% auto auto;width:520px;height:520px;background:radial-gradient(closest-side,rgba(211,154,94,.20),transparent 70%);pointer-events:none}
+.arcs{position:absolute;top:-40px;left:-90px;width:360px;opacity:.5;pointer-events:none}
+.hero-grid{position:relative;display:grid;gap:24px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--copper-hi);background:rgba(211,154,94,.10);border:1px solid var(--line);padding:6px 14px;border-radius:var(--pill)}
+.chip i{width:6px;height:6px;border-radius:50%;background:var(--copper)}
+h1{font-family:var(--f-display);font-weight:900;color:var(--sand);font-size:36px;line-height:1.3;margin:16px 0 12px;letter-spacing:-.2px}
+h1 .accent{background:var(--tayf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:16.5px;color:var(--sand-2);max-width:34ch}
+.hero-ctas{display:grid;grid-template-columns:1fr;gap:10px;margin-top:22px}
+.hero-note{font-size:13px;color:var(--sand-3);margin-top:12px;display:flex;gap:8px;align-items:center}
+.hero-note svg{width:16px;height:16px;color:var(--copper)}
+
+/* placeholder photos */
+.ph{position:relative;border-radius:var(--r-lg);overflow:hidden;background:
+  radial-gradient(120% 80% at 70% 20%,rgba(236,192,138,.20),transparent 60%),
+  linear-gradient(160deg,#3a2a1d 0%,#22180f 55%,#170f0a 100%);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.ph::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.018) 0 2px,transparent 2px 14px)}
+.ph svg.ico{width:34%;max-width:120px;color:rgba(236,192,138,.42);position:relative;z-index:1}
+.ph .cap{position:absolute;z-index:2;bottom:12px;right:12px;left:12px;font-size:12px;color:var(--sand);background:rgba(18,13,9,.72);backdrop-filter:blur(6px);border:1px solid var(--line);padding:6px 10px;border-radius:10px;line-height:1.5}
+.ph .cap b{color:var(--copper-hi);font-weight:600}
+.hero-ph{aspect-ratio:4/3.2}
+
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:22px;border:1px solid var(--line);border-radius:var(--r-md);background:rgba(35,26,19,.6)}
+.fact{padding:14px 8px;text-align:center}
+.fact+.fact{border-inline-start:1px solid var(--line)}
+.fact strong{display:block;font-family:var(--f-display);font-weight:700;color:var(--sand);font-size:16px;line-height:1.35}
+.fact span{font-size:12px;color:var(--sand-3);line-height:1.5;display:block;margin-top:2px}
+
+/* ---------- Sections ---------- */
+section{padding:var(--sec) 0}
+.alt{background:var(--roast-2);border-block:1px solid rgba(211,154,94,.08)}
+.sec-head{margin-bottom:26px}
+.eyebrow{font-size:13px;font-weight:600;color:var(--copper);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--tayf)}
+h2{font-family:var(--f-display);font-weight:700;color:var(--sand);font-size:28px;line-height:1.35;margin-top:8px}
+.sec-head p{margin-top:8px;color:var(--sand-3);font-size:15px;max-width:52ch}
+
+/* services */
+.svc{display:grid;gap:12px}
+.svc-card{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:start;padding:18px;border-radius:var(--r-md);background:var(--roast-3);border:1px solid var(--line)}
+.svc-ico{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:rgba(211,154,94,.10);border:1px solid var(--line);color:var(--copper-hi)}
+.svc-ico svg{width:28px;height:28px}
+.svc-card h3{font-family:var(--f-display);font-weight:700;font-size:19px;color:var(--sand);line-height:1.4}
+.svc-card p{font-size:14.5px;color:var(--sand-3);margin-top:4px;line-height:1.7}
+
+/* occasions */
+.occ{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.occ-card .ph{aspect-ratio:1/1.1;border-radius:var(--r-md)}
+.occ-card .ph svg.ico{width:30%}
+.occ-card h3{font-family:var(--f-display);font-weight:700;font-size:17px;color:var(--sand);margin-top:10px;line-height:1.4}
+.occ-card p{font-size:13px;color:var(--sand-3);line-height:1.6}
+
+/* steps */
+.steps{display:grid;gap:12px;counter-reset:s}
+.step{position:relative;padding:20px 20px 20px 20px;padding-inline-start:72px;border-radius:var(--r-md);border:1px solid var(--line);background:linear-gradient(180deg,rgba(45,34,25,.7),rgba(35,26,19,.5))}
+.step::before{counter-increment:s;content:counter(s,arabic-indic);position:absolute;inset-inline-start:18px;top:18px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-weight:900;font-size:20px;color:#1b120a;background:var(--tayf)}
+.step h3{font-family:var(--f-display);font-weight:700;color:var(--sand);font-size:18px;line-height:1.4}
+.step p{font-size:14.5px;color:var(--sand-3);margin-top:2px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gal .ph{aspect-ratio:1/1;border-radius:var(--r-sm)}
+.gal .ph.tall{grid-row:span 2;aspect-ratio:auto}
+.gal .ph svg.ico{width:28%}
+.center{display:flex;justify-content:center;margin-top:22px}
+
+/* quote form */
+.quote{border-radius:var(--r-lg);border:1px solid var(--line-2);background:
+  radial-gradient(90% 60% at 100% 0%,rgba(211,154,94,.14),transparent 60%),var(--roast-3);padding:24px 18px}
+.field{margin-top:18px}
+.field label{display:block;font-size:14px;font-weight:600;color:var(--sand);margin-bottom:8px}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg span{height:44px;padding:0 16px;display:inline-flex;align-items:center;border-radius:var(--pill);border:1px solid var(--line-2);font-size:14px;color:var(--sand-2);background:rgba(18,13,9,.4)}
+.seg span.on{background:var(--tayf);color:#1b120a;border-color:transparent;font-weight:600}
+.input{height:50px;border-radius:14px;border:1px solid var(--line-2);background:rgba(18,13,9,.5);display:flex;align-items:center;justify-content:space-between;padding:0 16px;font-size:15px;color:var(--sand-3)}
+.input svg{width:18px;height:18px;color:var(--copper)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.quote .btn{width:100%;margin-top:22px}
+.privacy{font-size:12.5px;color:var(--sand-3);text-align:center;margin-top:10px}
+
+/* faq */
+.faq{display:grid;gap:10px}
+.q{border:1px solid var(--line);border-radius:var(--r-md);background:var(--roast-3);padding:16px 18px}
+.q summary{list-style:none;min-height:44px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:600;color:var(--sand);font-size:15.5px;cursor:pointer}
+.q summary::-webkit-details-marker{display:none}
+.q summary i{flex:none;width:30px;height:30px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--copper);font-style:normal;font-size:18px;line-height:1}
+.q p{margin-top:10px;font-size:14.5px;color:var(--sand-3)}
+
+/* final CTA */
+.final{text-align:center;padding:36px 20px;border-radius:var(--r-lg);border:1px solid var(--line-2);background:radial-gradient(70% 90% at 50% 0%,rgba(211,154,94,.18),transparent 70%),var(--roast-2)}
+.final h2{font-size:26px}
+.final p{color:var(--sand-3);margin:8px auto 20px;max-width:40ch;font-size:15px}
+.final .row{display:grid;gap:10px}
+
+/* footer */
+footer{padding:44px 0 28px;border-top:1px solid var(--line);background:#0e0a07}
+.f-grid{display:grid;gap:28px}
+.f-about{font-size:14px;color:var(--sand-3);margin-top:12px;max-width:40ch}
+.f-col h4{font-size:14px;color:var(--sand);margin-bottom:10px;font-weight:600}
+.f-col a{display:flex;align-items:center;min-height:44px;font-size:14px;color:var(--sand-3)}
+.f-bottom{margin-top:28px;padding-top:18px;border-top:1px solid rgba(211,154,94,.10);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12.5px;color:var(--sand-3)}
+
+/* sticky bar (mobile) */
+.bar{position:fixed;inset:auto 0 0 0;z-index:60;height:var(--bar);padding:8px 12px calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1.25fr 1fr;gap:8px;background:rgba(14,10,7,.95);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.bar .btn{height:52px;font-size:15px;padding:0 12px}
+
+/* ---------- Desktop ---------- */
+@media (min-width:960px){
+  :root{--gutter:32px;--sec:96px;--hdr:76px}
+  body{padding-bottom:0}
+  .bar{display:none}
+  .nav{display:flex}
+  .hdr-call{display:none}
+  .hdr .hdr-cta{display:inline-flex;height:46px;font-size:15px;padding:0 20px}
+  .brand-name{font-size:24px}
+  .hero{padding:64px 0 40px}
+  .hero-grid{grid-template-columns:1.05fr .95fr;align-items:center;gap:56px}
+  h1{font-size:58px;line-height:1.22}
+  .lead{font-size:18.5px}
+  .hero-ctas{grid-template-columns:auto auto;justify-content:start;gap:12px}
+  .hero-ph{aspect-ratio:4/4.3}
+  .facts{max-width:560px}
+  .fact{padding:18px 12px}
+  .fact strong{font-size:18px}
+  .fact span{font-size:13px}
+  h2{font-size:40px}
+  .sec-head{margin-bottom:40px}
+  .sec-head.split{display:flex;justify-content:space-between;align-items:end;gap:24px}
+  .svc{grid-template-columns:repeat(4,1fr);gap:16px}
+  .svc-card{grid-template-columns:1fr;padding:24px;gap:16px}
+  .svc-card h3{font-size:21px}
+  .occ{grid-template-columns:repeat(4,1fr);gap:16px}
+  .occ-card h3{font-size:19px}
+  .steps{grid-template-columns:repeat(3,1fr);gap:16px}
+  .step{padding:28px;padding-top:84px}
+  .step::before{top:24px;inset-inline-start:28px;width:44px;height:44px}
+  .gal{grid-template-columns:repeat(4,1fr);gap:14px}
+  .quote-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+  .quote{padding:36px}
+  .faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+  .final{padding:64px 32px}
+  .final h2{font-size:38px}
+  .final .row{grid-template-columns:auto auto;justify-content:center}
+  .f-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-dallah" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M30 6c2 0 3 1.5 3 3s-1 2-3 2-3-.5-3-2 1-3 3-3Z"/><path d="M24 14h12l-1.5 6h-9z"/><path d="M25.5 20c-5 4-8 10-8 18 0 8 4 14 4 14h17s4-6 4-14c0-8-3-14-8-18"/><path d="M42 30c4-2 8-6 12-14l3 1c-2 8-6 15-12 19"/><path d="M18 34c-5 0-8 3-8 7s3 7 7 7"/><path d="M21 52l-2 6h22l-2-6"/><path d="M22 36h16"/></g></symbol>
+    <symbol id="i-cup" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 26h32l-4 18a6 6 0 0 1-6 5H26a6 6 0 0 1-6-5Z"/><path d="M12 54h40"/><path d="M26 12c-2 3 2 5 0 8M32 10c-2 3 2 5 0 8M38 12c-2 3 2 5 0 8"/></g></symbol>
+    <symbol id="i-tea" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 18h20l-2 8H24z"/><path d="M24 26c-4 4-5 10-4 16 1 7 6 12 12 12s11-5 12-12c1-6 0-12-4-16"/><path d="M44 34h4a5 5 0 0 1 0 10h-5"/><path d="M28 12h8"/></g></symbol>
+    <symbol id="i-dates" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="22" cy="36" rx="7" ry="11" transform="rotate(-25 22 36)"/><ellipse cx="40" cy="34" rx="7" ry="11" transform="rotate(20 40 34)"/><path d="M8 50c8 6 40 6 48 0"/><path d="M38 22c1-4 4-7 8-8"/></g></symbol>
+    <symbol id="i-corner" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 54V24L32 8l24 16v30"/><path d="M14 54V40h36v14"/><path d="M14 40h36"/><path d="M24 40v-6h4v6M36 40v-8h5v8"/><path d="M4 54h56"/></g></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3 5 6v5c0 5 3 8.5 7 10 4-1.5 7-5 7-10V6Zm-3 9 2 2 4-4"/></symbol>
+  </defs>
+</svg>
+
+<div class="ribbon">نموذج أولي داخلي — النصوص والصور مؤقتة ويعتمدها أبو سعد</div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ecc08a"/><stop offset=".55" stop-color="#d39a5e"/><stop offset="1" stop-color="#a8703d"/></linearGradient></defs>
+        <rect x="1" y="1" width="46" height="46" rx="14" fill="#231a13" stroke="rgba(211,154,94,.4)"/>
+        <path d="M10 26a14 14 0 0 1 28 0" fill="none" stroke="url(#g)" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M14.5 26a9.5 9.5 0 0 1 19 0" fill="none" stroke="url(#g)" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
+        <path d="M17 29h14l-1.6 6.4a3 3 0 0 1-2.9 2.3h-5a3 3 0 0 1-2.9-2.3Z" fill="url(#g)"/>
+      </svg>
+      <div>
+        <div class="brand-name">طيف الضيافة</div>
+        <div class="brand-sub">الدمام · الخبر</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="#services">الخدمات</a><a href="#occasions">المناسبات</a><a href="#gallery">من شغلنا</a><a href="#how">طريقة الطلب</a><a href="#faq">الأسئلة</a>
+    </nav>
+    <a class="hdr-call" href="#"><svg width="18" height="18"><use href="#i-phone"/></svg>اتصل</a>
+    <a class="btn btn-copper hdr-cta" href="#quote">اطلب عرض سعر</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<div class="hero">
+  <svg class="arcs" viewBox="0 0 360 360" aria-hidden="true"><g fill="none" stroke="#d39a5e" stroke-linecap="round"><path d="M20 340a160 160 0 0 1 320 0" stroke-opacity=".22"/><path d="M60 340a120 120 0 0 1 240 0" stroke-opacity=".16"/><path d="M100 340a80 80 0 0 1 160 0" stroke-opacity=".10"/></g></svg>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="chip"><i></i>ضيافة سعودية · المنطقة الشرقية</span>
+      <h1>قهوجيين وصبابين<br>في <span class="accent">الدمام والخبر</span></h1>
+      <p class="lead">قهوة سعودية وشاي وتقديمات لمناسبتك، بطاقم يخدم ضيوفك من أول فنجال لين آخر ضيف.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="#quote"><svg><use href="#i-wa"/></svg>اطلب عرض سعر على واتساب</a>
+        <a class="btn btn-ghost" href="#"><svg><use href="#i-phone"/></svg>اتصل الآن</a>
+      </div>
+      <p class="hero-note"><svg><use href="#i-shield"/></svg>أرسل التاريخ وعدد الضيوف، ويوصلك السعر قبل أي تأكيد.</p>
+    </div>
+    <div>
+      <div class="ph hero-ph"><svg class="ico"><use href="#i-dallah"/></svg><div class="cap"><b>صورة حقيقية لاحقًا:</b> القهوجي يصب لضيف في مناسبة من شغل أبو سعد</div></div>
+      <div class="facts">
+        <div class="fact"><strong>الدمام والخبر</strong><span>نغطي مناسباتك</span></div>
+        <div class="fact"><strong>السعر أولًا</strong><span>قبل أي تأكيد</span></div>
+        <div class="fact"><strong>تواصل مباشر</strong><span>مع صاحب الخدمة</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">خدماتنا</div>
+      <h2>وش نقدم لمناسبتك؟</h2>
+      <p>اختر اللي تحتاجه، ونرتب لك الباقي حسب عدد ضيوفك.</p>
+    </div>
+    <div class="svc">
+      <article class="svc-card"><div class="svc-ico"><svg><use href="#i-dallah"/></svg></div><div><h3>قهوجيين وصبابين</h3><p>تحضير القهوة السعودية وصبها للضيوف طول المناسبة.</p></div></article>
+      <article class="svc-card"><div class="svc-ico"><svg><use href="#i-corner"/></svg></div><div><h3>ركن الضيافة</h3><p>ركن مجهز بالدلال والفناجين والتمر يستقبل ضيوفك.</p></div></article>
+      <article class="svc-card"><div class="svc-ico"><svg><use href="#i-tea"/></svg></div><div><h3>الشاي والمشروبات</h3><p>شاي ومشروبات حارة وباردة حسب القائمة اللي تختارها.</p></div></article>
+      <article class="svc-card"><div class="svc-ico"><svg><use href="#i-dates"/></svg></div><div><h3>التقديمات</h3><p>تمر وحلا ومعجنات تنقدم مع القهوة.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- OCCASIONS -->
+<section id="occasions" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">المناسبات</div>
+      <h2>لكل مناسبة ترتيبها</h2>
+    </div>
+    <div class="occ">
+      <div class="occ-card"><div class="ph"><svg class="ico"><use href="#i-cup"/></svg><div class="cap">صورة: زواج</div></div><h3>الأعراس والملكات</h3><p>استقبال وضيافة طول الليلة</p></div>
+      <div class="occ-card"><div class="ph"><svg class="ico"><use href="#i-dallah"/></svg><div class="cap">صورة: مجلس</div></div><h3>المجالس والعزاء</h3><p>حضور هادي ومرتب</p></div>
+      <div class="occ-card"><div class="ph"><svg class="ico"><use href="#i-tea"/></svg><div class="cap">صورة: شركة</div></div><h3>الشركات والاجتماعات</h3><p>ضيافة للاجتماعات والفعاليات</p></div>
+      <div class="occ-card"><div class="ph"><svg class="ico"><use href="#i-dates"/></svg><div class="cap">صورة: استقبال</div></div><h3>الاستقبالات والمواليد</h3><p>ترتيب يناسب بيتك</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">طريقة الطلب</div>
+      <h2>الطلب في ثلاث خطوات</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>أرسل تفاصيل مناسبتك</h3><p>المدينة، التاريخ، وعدد الضيوف التقريبي.</p></div>
+      <div class="step"><h3>يوصلك عرض السعر</h3><p>مكتوب وواضح، ووش يشمل بالضبط.</p></div>
+      <div class="step"><h3>نأكد الموعد ونجهز</h3><p>بعد موافقتك نثبت الموعد ونرتب لمناسبتك.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="alt">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div><div class="eyebrow">من شغلنا</div><h2>صور من مناسبات خدمناها</h2></div>
+      <p>كل الصور هنا من شغل أبو سعد الفعلي، بإذن أصحاب المناسبات.</p>
+    </div>
+    <div class="gal">
+      <div class="ph tall"><svg class="ico"><use href="#i-dallah"/></svg><div class="cap">الطاقم</div></div>
+      <div class="ph"><svg class="ico"><use href="#i-corner"/></svg><div class="cap">ركن الضيافة</div></div>
+      <div class="ph"><svg class="ico"><use href="#i-cup"/></svg><div class="cap">الصب</div></div>
+      <div class="ph"><svg class="ico"><use href="#i-dates"/></svg><div class="cap">التقديمات</div></div>
+      <div class="ph"><svg class="ico"><use href="#i-tea"/></svg><div class="cap">الشاي</div></div>
+      <div class="ph tall"><svg class="ico"><use href="#i-dallah"/></svg><div class="cap">الدلال</div></div>
+      <div class="ph"><svg class="ico"><use href="#i-cup"/></svg><div class="cap">الفناجين</div></div>
+    </div>
+    <div class="center"><a class="btn btn-ghost" href="#">شوف كل الصور</a></div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section id="quote">
+  <div class="wrap quote-wrap">
+    <div class="sec-head">
+      <div class="eyebrow">عرض سعر</div>
+      <h2>جهّز طلبك في ثواني</h2>
+      <p>عبّ التفاصيل وينفتح لك واتساب برسالة جاهزة. ترسلها، ويوصلك السعر.</p>
+    </div>
+    <div class="quote">
+      <div class="field" style="margin-top:0"><label>المدينة</label><div class="seg"><span class="on">الدمام</span><span>الخبر</span><span>مدينة ثانية</span></div></div>
+      <div class="field"><label>نوع المناسبة</label><div class="input">زواج / ملكة<svg><use href="#i-down"/></svg></div></div>
+      <div class="two">
+        <div class="field"><label>التاريخ</label><div class="input">اختر اليوم<svg><use href="#i-cal"/></svg></div></div>
+        <div class="field"><label>الوقت</label><div class="input">مساءً<svg><use href="#i-down"/></svg></div></div>
+      </div>
+      <div class="field"><label>عدد الضيوف التقريبي</label><div class="seg"><span>أقل من ٥٠</span><span class="on">٥٠ – ١٥٠</span><span>أكثر من ١٥٠</span></div></div>
+      <a class="btn btn-wa" href="#"><svg><use href="#i-wa"/></svg>أرسل الطلب على واتساب</a>
+      <p class="privacy">ما نحفظ بياناتك. الطلب يروح مباشرة لواتساب.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="alt">
+  <div class="wrap faq-wrap">
+    <div class="sec-head">
+      <div class="eyebrow">أسئلة</div>
+      <h2>قبل ما تحجز</h2>
+      <p>الإجابات النهائية يكتبها أبو سعد.</p>
+    </div>
+    <div class="faq">
+      <details class="q" open><summary>كيف يتحدد السعر؟<i>−</i></summary><p>حسب عدد الضيوف ومدة المناسبة والخدمات اللي تختارها. أرسل التفاصيل ويوصلك السعر مكتوب.</p></details>
+      <details class="q"><summary>كم لازم أحجز قبل المناسبة؟<i>+</i></summary></details>
+      <details class="q"><summary>هل تجيبون الدلال والفناجين والتمر؟<i>+</i></summary></details>
+      <details class="q"><summary>هل تغطون مدن غير الدمام والخبر؟<i>+</i></summary></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section>
+  <div class="wrap">
+    <div class="final">
+      <h2>عندك مناسبة قريبة؟</h2>
+      <p>أرسل التاريخ وعدد الضيوف، ونرد عليك بالسعر.</p>
+      <div class="row">
+        <a class="btn btn-wa" href="#quote"><svg><use href="#i-wa"/></svg>واتساب</a>
+        <a class="btn btn-ghost" href="#"><svg><use href="#i-phone"/></svg>05X XXX XXXX</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="brand-name">طيف الضيافة</div>
+        <p class="f-about">قهوجيين وصبابين وضيافة سعودية للمناسبات في الدمام والخبر.</p>
+      </div>
+      <div class="f-col"><h4>الخدمات</h4><a href="#">قهوجيين الدمام</a><a href="#">صبابين الخبر</a><a href="#">ركن ضيافة</a></div>
+      <div class="f-col"><h4>المناسبات</h4><a href="#">ضيافة أعراس</a><a href="#">ضيافة عزاء</a><a href="#">ضيافة شركات</a></div>
+      <div class="f-col"><h4>تواصل</h4><a href="#">واتساب</a><a href="#">05X XXX XXXX</a><a href="#">info@tayfaldiafa.com</a></div>
+    </div>
+    <div class="f-bottom"><span>© 2026 طيف الضيافة · tayfaldiafa.com</span><span>تطوير العباسي تك</span></div>
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="btn btn-wa" href="#quote"><svg><use href="#i-wa"/></svg>اطلب على واتساب</a>
+  <a class="btn btn-ghost" href="#"><svg><use href="#i-phone"/></svg>اتصال</a>
+</div>
+</body>
+</html>
